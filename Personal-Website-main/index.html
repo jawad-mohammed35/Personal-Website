@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jawad Mohammed</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jawad Mohammed</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile__pic-container">
+            <img src="./assets/profile-pic.png" alt="Jawad Mohammed profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jawad Mohammed</h1>
+            <p class="section__text__p2">Computer Science Student</p>
+            <div class="btn-container">
+                <button
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/resume.pdf')"
+                >
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img
+                    src="./assets/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/jawad-mohammed01/'"
+                />
+                <img
+                    src="./assets/github.png"
+                    alt="My Github profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/jawad-mohammed35'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about__pic-container">
+                <img
+                    src="./assets/about-pic.png"
+                    alt="Profile picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                            src="./assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>Undergraduate Student majoring in Computer Science</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                            src="./assets/education.png"
+                            alt="Education icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Florida International University<br /></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I'm student majoring in Computer Science at FIU and I'm on my last year.
+                        I'm currently an intern at the EPSi lab @ FIU Engineering Center.
+                        I have a strong passion for full stack development within the Software Engineering field.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Engineering Fellowship</h2>
+                    <p><strong>Headstarter AI</strong></p>
+                    <p><strong>July 2024 - Present</strong></p>
+                    <p> - In progress. </p>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Student Research Intern</h2>
+                    <p><strong>EPSi Lab (FIU Engineering Center)</strong></p>
+                    <p><strong>February 2024 - Present</strong></p>
+                    <p>- Conducting focused investigations in areas including smart grids, electric vehicles, renewable energy systems, 
+                      storage technologies, grid resiliency, data analysis, artificial intelligence, advanced metering infrastructure, 
+                      and smart city infrastructure.</p>
+                    <p>- Using technologies as Test Complete and ADMS. Advancing knowledge in software testing.</p>
+                    <p>- Hosting weekly meetings with the team to discuss current and upcoming project updates.</p>
+                    <p>- Creating documentation for current and completed projects for team to reference back to.</p>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Retail Associate</h2>
+                    <p><strong>Kohl's (Miami, FL)</strong></p>
+                    <p><strong>June 2022 - January 2024</strong></p>
+                    <p>- Specialized in the Amazon department, provided exceptional customer service by facilitating seamless returns 
+                      and efficiently loading returns onto delivery trucks.</p>
+                    <p>- Managed cash register operations, processing transactions accurately and efficiently while ensuring a positive 
+                      checkout experience for customers.</p>
+                    <p>- Assisted customers with self-pickup orders, addressing inquiries regarding products and services, and maintaining 
+                      a clean and organized work environment.</p>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#projects'"
+        />
+    </section>
+    
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./assets/project-1.png"
+                            alt="Project 1"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pesonal Finance Tracker</h2>
+                    <p><strong>Python/Flask, HTML/CSS & JavaScript</strong></p>
+                    <p>- Developed a robust and user-friendly Personal Finance Tracker web application designed to help users manage their income, expenses, and budgeting efficiently.</p>
+                    <p>- Key features of the app include user authentication, transaction management, categorization, visualization,
+                        multilingual support and theme switching.</p>
+                    <div class="btn-container">
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://github.com/jawad-mohammed35/Personal-Finance-Tracker'"
+                        >
+                            Github
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                    src="./assets/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:jawadbetlu2@gmail.com">jawadbetlu2@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/jawad-mohammed01/">LinkedIn Profile</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                    src="./assets/github.png"
+                    alt="GitHub icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://github.com/jawad-mohammed35">GitHub Profile</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jawad Mohammed. All rights reserved.</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const hamburger = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        hamburger.classList.toggle("open");
+      }
+    </script>
+</body>
+</html>
